@@ -6,7 +6,10 @@ const searchBox=document.querySelector("#search");
 
 
 searchBox.addEventListener("keyup",(e)=>{
-let searchText=e.target.value.toLowerCase().trim();
+let searchText=e.target.value.toLowerCase().trim();     
+
+
+
 boxes.forEach((box)=>{
     const data=box.dataset.item;
 if(data.includes(searchText)){
